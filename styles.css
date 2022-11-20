@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Celulares */
+
+body {
+    background-color: #f5f1eb;
+}
+
+.text-h1 {
+    font-size: 12px;
+    margin: 1rem;
+}
+
+.text-h1 h1 {
+    font-family: inconsolata, monospace;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin: 2rem auto;
+    flex-basis: 400px;
+}
+
+.imagen img {
+    width: 20rem;
+    height: auto;
+}
+
+.texts {
+    margin: 0 auto;
+    flex-basis: 19.25rem;
+    height: 20rem;
+}
+
+.text-1, .text-2 {
+    font-family: 'Space Mono', monospace;
+}
+
+.text-1 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:  #333333;
+}
+
+.text-2 {
+    font-size: 15.5px;
+    letter-spacing: 1px;
+    color: #4F4F4F;
+}
+
+.section p{
+    text-align: lef
+}
+
+.button-container {
+    width: 15rem;
+    padding: 1px 2rem; 
+    margin: 0;
+    background:  #333333;
+    border-radius: 5px;
+    transition: box-shadow;
+    transition-duration: 1s;
+    
+}
+
+.button-container a {
+    background-color:  #333333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-container:hover {
+    box-shadow: 1px 1px 3px #000;
+}
+
+.footer {
+    background-color: #dbd5c9;
+    padding: 2rem;
+    margin: 4rem 0 0;
+}
+
+.footer p, a {
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #8a8a8a;
+}
+
+/* A partir de 650px o pantallas mas grandes */
+@media screen and (min-width: 650px) {
+    
+    .contenedor {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        align-items: baseline;
+    }
+
+    .section {
+        margin: 1.7rem auto 0;
+    }
+
+    .imagen img {
+        width: 27rem;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .texts {
+        flex-basis: 23rem;
+    }
+
+    .text-1 {
+        width: 30rem;
+        font-size: 35px;
+    }
+
+    .text-2 {
+        font-size: 23px;
+        width: 30rem;
+    }
+
+    .button-container {
+        width: 15rem;
+        height: 4.6rem;
+        margin: 4rem 0;
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 10rem;
+    }
+
+}
+
+/* Pantallas grandes (pc) */
+@media screen and (min-width: 1070px) {
+    
+    .text-h1 {
+        font-size: 15px;
+        margin: 2rem;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        max-height: 40rem;
+    }
+
+    .section {
+        margin: 2rem auto;
+    }
+
+
+    .imagen img {
+        width: 30rem;
+       
+    }
+
+    .texts {
+        margin-bottom: 45rem;
+    }
+
+    .text-1 {
+        font-size: 40px;
+        flex-basis: 20rem;
+        padding: 20px;
+    }
+
+    .text-2 {
+        font-size: 25px;
+        flex-basis: 28rem;
+        margin-left: 3rem;
+    }
+
+    .button-container {
+        width: 15rem;
+        height: 5.2rem;
+        margin: 4rem 3rem;
+    }
+
+    .footer {
+        margin-top: 5rem;
+    }
+}
